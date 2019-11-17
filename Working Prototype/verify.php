@@ -9,7 +9,7 @@
                 die();
               }
               else {
-                header("Location: login.html");
+                header("Location: login.php?username=doesnotexist");
                 die();
               }
        }
