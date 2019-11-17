@@ -21,7 +21,10 @@
             </form>
         </div>
         <?php
-            if (isset($_POST["create"])) {
+            if (isset($_GET["username"])) {
+                echo "<h2 style='color: red;'>Incorrect login information.</h2>";
+            }
+            elseif (isset($_POST["create"])) {
                 $username = $_POST["create_username"];
                 $password = $_POST["create_password"];
                 $db = mysqli_connect("db1.cs.uakron.edu:3306", "kff6", "aem8Aquo");
