@@ -5,7 +5,7 @@
               $password = $_POST["password"];
               $query = $db->query("SELECT * FROM ISP_kff6.Users WHERE UserName='$username' AND Password='$password'");
               if (mysqli_num_rows($query) > 0) {
-                header("Location: view.php?username='$username'");
+                header("Location: view.php?username=$username");
                 die();
               }
               else {
