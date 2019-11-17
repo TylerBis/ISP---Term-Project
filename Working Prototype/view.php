@@ -19,7 +19,7 @@
                                    exit;
                             }
                             $db = mysqli_connect("db1.cs.uakron.edu:3306", "kff6", "aem8Aquo");
-                            $sql="SELECT * FROM ISP_kff6.images JOIN (SELECT imageID FROM ISP_kff6.owned_images JOIN ISP_kff6.Users ON owned_images.username='$user') temp ON images.id=temp.imageID";
+                            $sql="SELECT * FROM ISP_kff6.images JOIN (SELECT imageID FROM ISP_kff6.owned_images WHERE owned_images.username='$user') temp ON images.id=temp.imageID";
                             $query=$db->query($sql);
                             $num=mysqli_num_rows($query);
                             $result=mysqli_fetch_all($query,MYSQLI_ASSOC);
