@@ -22,7 +22,7 @@
             <button class="navbar" onclick="location.href='login.html'">Logout</button>
             <form action="upload.php?username=<?php echo $user; ?>" method="post" enctype="multipart/form-data">
                 <div class="upload_text" style="color: white; font-size: 18px;">Select image to upload:</div>
-                <div class="choose_file" style="color: white; font-size: 18px;"><input type="file" id="imgupload"></div>
+                <div class="choose_file" style="color: white; font-size: 18px;"><input type="file" name="image"></div>
                 <div class="upload" style="color: white;"><input type="submit" name="submit" value="UPLOAD"/></div>
             </form>
 
