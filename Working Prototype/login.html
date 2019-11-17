@@ -1,0 +1,25 @@
+<html>
+    <head>
+        <link rel="stylesheet" href="stylesheet.css"/>
+        <script src="TermProject.js" type="text/javascript"></script>
+        <title>Login</title>
+    </head>
+    <body>
+        <div class="login_container">
+            <div class="login_form">
+                <form action="verify.php" method="post">
+                    <h1 style="color: white;">Login</h1>
+                    <input type="text" name="username" placeholder="Username"/><br/><br/>
+                    <input type="password" name="password" placeholder="Password"/><br/><br/>
+                    <input type="submit" name="login" value="Login">
+                </form>
+                <form action="login.php" method="post">
+                    <h1 style="color: white;">Create an Account</h1>
+                    <input type="text" name="create_username" placeholder="Username"/><br/><br/>
+                    <input type="password" name="create_password" placeholder="Password"/><br/><br/>
+                    <input type="submit" name="create" value="Create Account">
+                </form>
+        </div>
+        
+    </body>
+</html>
