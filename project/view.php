@@ -21,6 +21,9 @@
 $sql="select * from ISP_kff6.images";
 $query=$db->query($sql);
 $num=mysqli_num_rows($query);
-$result=mysqli_fetch_array($query);
-echo '<img src="data:image/jpeg;base64,'.base64_encode($result['image']).'"/>';
+$result=mysqli_fetch_all($query,MYSQLI_ASSOC);
+
+for ($i = 0; $i < $num; ++$i) {
+       echo '<img src="data:image/jpeg;base64,'.base64_encode($result[$i]['image']).'"/>';
+}
 ?>
