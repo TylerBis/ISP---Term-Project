@@ -20,6 +20,7 @@
             <button class="navbar" onclick="location.href='upload.php?username=<?php echo $user; ?>'">Upload</button>
             <button class="navbar" onclick="location.href='account.php?username=<?php echo $user; ?>'">Account</button>
             <button class="navbar" onclick="location.href='login.html'">Logout</button>
+            <button class="navbar" onclick="location.href='help.html?username=<?php echo $user; ?>'">Help</button>
             <form action="upload.php?username=<?php echo $user; ?>" method="post" enctype="multipart/form-data">
                 <div class="upload_text" style="color: white; font-size: 18px;">Select image to upload:</div>
                 <div class="choose_file" style="color: white; font-size: 18px;"><input type="file" name="image"/></div>
