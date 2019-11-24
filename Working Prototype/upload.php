@@ -19,7 +19,7 @@
             <button class="navbar" onclick="location.href='view.php?username=<?php echo $user; ?>'">Home</button>
             <button class="navbar" onclick="location.href='upload.php?username=<?php echo $user; ?>'">Upload</button>
             <button class="navbar" onclick="location.href='account.php?username=<?php echo $user; ?>'">Account</button>
-            <button class="navbar" onclick="location.href='login.html'">Logout</button>
+            <button class="navbar" onclick="location.href='prj.html'">Logout</button>
             <button class="navbar" onclick="location.href='help.php?username=<?php echo $user; ?>'">Help</button>
             <form action="upload.php?username=<?php echo $user; ?>" method="post" enctype="multipart/form-data">
                 <div class="upload_text" style="color: white; font-size: 18px;">Select image to upload:</div>
