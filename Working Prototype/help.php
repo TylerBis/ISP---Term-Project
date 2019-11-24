@@ -6,6 +6,15 @@
     </head>
     <body>
         <div class="container">
+            <?php
+                if (isset($_GET["username"])) {
+                    $user = $_GET["username"];
+                }
+                else {
+                    echo "<h1 style='color: white;'>An error has occurred. You are not logged in.</h1>";
+                    exit;
+                }
+            ?>
             <button class="navbar" onclick="location.href='view.php?username=<?php echo $user; ?>'">Home</button>
             <button class="navbar" onclick="location.href='upload.php?username=<?php echo $user; ?>'">Upload</button>
             <button class="navbar" onclick="location.href='account.php?username=<?php echo $user; ?>'">Account</button>
