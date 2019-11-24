@@ -29,7 +29,7 @@
                      <button class="navbar" onclick="location.href='upload.php?username=<?php echo $user; ?>'">Upload</button>
                      <button class="navbar" onclick="location.href='account.php?username=<?php echo $user; ?>'">Account</button>
                      <button class="navbar" onclick="location.href='login.html'">Logout</button>
-                     <button class="navbar" onclick="location.href='help.html?username=<?php echo $user; ?>'">Help</button>
+                     <button class="navbar" onclick="location.href='help.php?username=<?php echo $user; ?>'">Help</button>
 
                      <h1 class="title">My Library</h1>
                      <?php
